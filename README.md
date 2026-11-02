@@ -35,6 +35,21 @@ Optional:
 
 The Inter font loads automatically from `cdn.iso.org`.
 
+## Running it
+
+Plain HTML, no build step. To serve it locally (Node.js 18 or later):
+
+```bash
+npm install
+npm run dev
+```
+
+Then open <http://localhost:3000>. The server uses `$PORT` when it's set.
+
+### Importing into v0
+
+v0 can import this repository as a project. It needs the Vercel GitHub App to have access to the repository (GitHub → Settings → Applications → Vercel → Configure). After import, v0 commits its changes to a working branch (never to `main`) and Vercel builds a preview of that branch. New pages go next to `index.html` and load the two stylesheets with relative paths (`css/bootstrap-iso.css`, `css/iso.css`).
+
 ## Rules for generated pages (interim)
 
 Until the full usage guidelines are written:

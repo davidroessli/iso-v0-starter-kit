@@ -1,0 +1,13 @@
+{
+  "name": "iso-v0-starter-kit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Test: ISO front-end starter kit for AI page builders such as v0. Plain HTML with Bootstrap 5.3 and ISO styles; no build step.",
+  "scripts": {
+    "dev": "serve . --listen ${PORT:-3000}",
+    "start": "serve . --listen ${PORT:-3000}"
+  },
+  "devDependencies": {
+    "serve": "^14.2.6"
+  }
+}
