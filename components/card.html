@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ISO cards</title>
+  <link rel="stylesheet" href="https://davidroessli.github.io/iso-v0-starter-kit/css/bootstrap-iso.css">
+  <link rel="stylesheet" href="https://davidroessli.github.io/iso-v0-starter-kit/css/iso.css">
+</head>
+<body>
+<!--
+  CARDS
+
+  Standard Bootstrap 5.3 cards. In ISO style a card is white, with no border
+  and a soft shadow, on the grey page background. Use no extra classes or
+  inline styles for that: it comes from the stylesheets.
+
+  Variants:
+  - Default:      image (optional), heading, text
+  - With button:  .card-btn, centred, call to action in .card-footer
+  - Link with icon: .card-link, the whole card is one link (.stretched-link),
+                  turns red on hover
+
+  - Put cards in a grid row; add .h-100 so cards in a row have the same height.
+  - Card headings are h3 (or h6 in link cards), normally.
+  - Breakpoints are ISO's: col-md-* starts at 992px, col-sm-* at 768px.
+-->
+
+<main class="container">
+
+  <section>
+    <h2>Default</h2>
+    <div class="row">
+
+      <!-- Card with image -->
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100">
+          <img src="https://davidroessli.github.io/iso-v0-starter-kit/img/placeholder-1200x600.png" class="card-img-top" alt="">
+          <div class="card-body">
+            <h3>Quality management</h3>
+            <p>ISO 9001 sets out the criteria for a quality management system.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card without image -->
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3>Environmental management</h3>
+            <p>ISO 14001 helps organizations improve their environmental performance. <a href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card with image and footer -->
+      <div class="col-sm-6 col-md-4">
+        <div class="card h-100">
+          <img src="https://davidroessli.github.io/iso-v0-starter-kit/img/placeholder-1200x600.png" class="card-img-top" alt="">
+          <div class="card-body">
+            <h3>Information security</h3>
+            <p>ISO/IEC 27001 is the best-known standard for information security management.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#">Read more</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>With button</h2>
+    <div class="row">
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card card-btn text-center h-100">
+          <div class="card-body">
+            <h3>Get certified</h3>
+            <p>Find out how certification to ISO standards works.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Find out more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4">
+        <div class="card card-btn text-center h-100">
+          <div class="card-body">
+            <h3>Buy a standard</h3>
+            <p>Standards are available in PDF and paper formats.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-primary">Go to the store</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Link with icon</h2>
+    <div class="row">
+
+      <!-- The whole card is a link: one <a class="stretched-link"> on the title -->
+      <div class="col-6 col-md-3">
+        <div class="card card-link hover-zoom text-center h-100">
+          <div class="card-body">
+            <svg class="isoicon card-img-top" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="48" cy="48" r="40"/>
+              <ellipse cx="48" cy="48" rx="22" ry="40"/>
+              <line x1="48" y1="9" x2="48" y2="29"/>
+              <line x1="48" y1="41" x2="48" y2="55"/>
+              <line x1="48" y1="67" x2="48" y2="88"/>
+              <line x1="10" y1="35" x2="42" y2="35"/>
+              <line x1="54" y1="35" x2="86" y2="35"/>
+              <line x1="10" y1="61" x2="42" y2="61"/>
+              <line x1="54" y1="61" x2="86" y2="61"/>
+            </svg>
+            <h6><a href="#" class="stretched-link">ISO members</a></h6>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+</body>
+</html>

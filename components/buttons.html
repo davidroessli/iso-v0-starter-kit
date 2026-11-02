@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ISO buttons</title>
+  <link rel="stylesheet" href="https://davidroessli.github.io/iso-v0-starter-kit/css/bootstrap-iso.css">
+  <link rel="stylesheet" href="https://davidroessli.github.io/iso-v0-starter-kit/css/iso.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+<!--
+  BUTTONS
+
+  Standard Bootstrap 5.3 buttons. ISO look (red, 2px border, weight 600,
+  rounded corners) comes from the stylesheets: use no extra classes or inline styles.
+
+  - Main action:      .btn .btn-primary         (ISO red, filled)
+  - Secondary action: .btn .btn-outline-primary (ISO red outline)
+  - Sizes:            add .btn-sm, .btn-lg or .btn-xl (ISO addition)
+  - Use <a class="btn"> to go to another page, <button type="button"> for an action.
+  - Keep labels short. Use an icon only when it helps recognise the action.
+
+  Note: .btn-secondary is ISO dark red, not grey. Don't use it as a neutral button.
+  To check against web.iso.org: the "Secondary action" style is assumed to be
+  .btn-outline-primary.
+-->
+
+<main class="container">
+
+  <section>
+    <h2>Main and secondary action</h2>
+    <a href="#" class="btn btn-primary">Buy</a>
+    <a href="#" class="btn btn-outline-primary">Preview</a>
+  </section>
+
+  <section>
+    <h2>Sizes</h2>
+    <a href="#" class="btn btn-primary btn-sm">Small</a>
+    <a href="#" class="btn btn-primary">Default</a>
+    <a href="#" class="btn btn-primary btn-lg">Large</a>
+    <a href="#" class="btn btn-primary btn-xl">Extra large</a>
+  </section>
+
+  <section>
+    <h2>With an icon</h2>
+    <!-- Bootstrap Icons. The icon goes before the label, hidden from screen readers. -->
+    <a href="#" class="btn btn-primary"><i class="bi bi-download" aria-hidden="true"></i> Download</a>
+    <a href="#" class="btn btn-outline-primary">Read more <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+  </section>
+
+  <section>
+    <h2>Dropdown</h2>
+    <!-- Typically a download in several languages. Needs Bootstrap's JavaScript (loaded at the end). -->
+    <div class="btn-group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Download
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">English</a></li>
+        <li><a class="dropdown-item" href="#">Français</a></li>
+        <li><a class="dropdown-item" href="#">Русский</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="bg-brand-dark rounded px-4">
+    <h2>On a dark background</h2>
+    <a href="#" class="btn btn-light">Main action</a>
+    <a href="#" class="btn btn-outline-light">Secondary action</a>
+  </section>
+
+  <section>
+    <h2>Disabled</h2>
+    <button type="button" class="btn btn-primary" disabled>Not available</button>
+  </section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

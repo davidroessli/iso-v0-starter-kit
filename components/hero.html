@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ISO hero banner</title>
+  <link rel="stylesheet" href="https://davidroessli.github.io/iso-v0-starter-kit/css/bootstrap-iso.css">
+  <link rel="stylesheet" href="https://davidroessli.github.io/iso-v0-starter-kit/css/iso.css">
+</head>
+<body>
+<!--
+  HERO BANNER WITH IMAGE
+
+  Full-width image at the top of a page, darkened at the bottom
+  (.vignette .vignette-bottom) so the white heading stays readable.
+
+  - The image is an <img class="bg"> covering the section, so it can have alt
+    text and responsive sources. Use a wide image (at least 2400px wide).
+  - Use one h1 per page: in the hero.
+  - .height-500 sets the height. Put the text in a .row-absolute-bottom to place it
+    at the bottom, or in a .row.h-100.align-items-center to centre it.
+  - Vignette variants: .vignette-bottom (default here), .vignette-left (text on
+    the left), .vignette-light, .vignette-dark.
+
+  To check against web.iso.org: built from Wood's .section-img and .vignette
+  classes. The "Image" hero banner on web.iso.org may use different markup.
+-->
+
+<!-- Text at the bottom -->
+<section class="section-img vignette vignette-bottom height-500">
+  <img src="https://davidroessli.github.io/iso-v0-starter-kit/img/placeholder-2400x1200.png" class="bg start-0 w-100 h-100 object-fit-cover" alt="">
+  <div class="container">
+    <div class="row row-absolute-bottom">
+      <div class="col-lg-8 text-white">
+        <h1>Standards for a better world</h1>
+        <p class="lead">International standards make things work. They give world-class specifications for products, services and systems.</p>
+        <a href="#" class="btn btn-primary">Discover our standards</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Text on the left -->
+<section class="section-img vignette vignette-left height-500">
+  <img src="https://davidroessli.github.io/iso-v0-starter-kit/img/placeholder-2400x1200.png" class="bg start-0 w-100 h-100 object-fit-cover" alt="">
+  <div class="container">
+    <div class="row h-100 align-items-center">
+      <div class="col-md-6 text-white">
+        <h2>Technical committee</h2>
+        <p class="lead">Experts from around the world develop standards in this committee.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
