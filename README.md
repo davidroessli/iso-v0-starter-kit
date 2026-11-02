@@ -11,15 +11,17 @@ Wood is Bootstrap 5.3 with an ISO layer on top. This kit keeps that split:
 | `tokens/tokens.json` | ISO colours, typography, spacing, breakpoints (W3C design tokens) | Yes |
 | `components/*.html` | Standalone examples: buttons, card, hero banner | Yes |
 
-Rendered examples: <https://davidroessli.github.io/iso-v0-starter-kit/>
+To see the components rendered, download the repository and open the HTML files in a browser (they load the stylesheets from jsDelivr).
+
+Files are served by jsDelivr straight from this repository. After a change, jsDelivr can take up to 12 hours to pick it up; open `https://purge.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/css/iso.css` (same for any other file) to refresh it immediately.
 
 ## Using it in a page
 
 Load both stylesheets, in this order:
 
 ```html
-<link rel="stylesheet" href="https://davidroessli.github.io/iso-v0-starter-kit/css/bootstrap-iso.css">
-<link rel="stylesheet" href="https://davidroessli.github.io/iso-v0-starter-kit/css/iso.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/css/bootstrap-iso.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/css/iso.css">
 ```
 
 Optional:
