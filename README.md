@@ -9,7 +9,7 @@ Wood is Bootstrap 5.3 with an ISO layer on top. This kit keeps that split:
 | `css/bootstrap-iso.css` | Bootstrap 5.3.8 compiled with ISO colours, font, breakpoints and component settings (minified) | No, just link it |
 | `css/iso.css` | What ISO adds on top of Bootstrap (31 KB, readable) | Yes |
 | `tokens/tokens.json` | ISO colours, typography, spacing, breakpoints (W3C design tokens) | Yes |
-| `components/*.html` | Standalone examples: buttons, card, hero banner | Yes |
+| `components/*.html` | Standalone examples: top navigation, hero banner, card, buttons, footer | Yes |
 
 To see the components rendered, download the repository and open the HTML files in a browser (they load the stylesheets from jsDelivr).
 
@@ -61,10 +61,11 @@ Until the full usage guidelines are written:
 - Breakpoints are ISO's, not Bootstrap's: `sm` ≥ 768px, `md` ≥ 992px, `lg` ≥ 1200px, `xl` ≥ 1400px, `xxl` ≥ 1680px.
 - 1rem is 18–20px. Use `h1`–`h6` for headings, not `.fs-*` classes (they don't match ISO sizes).
 - The page background is light grey; cards are white with no border.
+- Start each page with the header from `components/navbar.html` and end it with a footer from `components/footer.html`. Keep the ISO logo as the empty `.logo.isologo` link; the stylesheet draws it.
 
 ## Status
 
-- Done: tokens, stylesheets, buttons, card, hero banner.
-- To come: image, top navigation, breadcrumbs, text + image layout, footer, usage guidelines.
+- Done: tokens, stylesheets, top navigation, hero banner, card, buttons, footer.
+- To come: image, breadcrumbs, text + image layout, usage guidelines.
 
 The files are generated from Wood's Sass sources; edit them there, not here.
