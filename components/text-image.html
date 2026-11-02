@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ISO text and image</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/css/bootstrap-iso.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/css/iso.css">
+</head>
+<body>
+<!--
+  TEXT AND IMAGE
+
+  Plain Bootstrap grid: a .row with the image (a <figure>, see image.html)
+  in one column and the text in the other. Each block is a <section>.
+
+  Variants:
+  - Image left, text right:  two .col-md-6
+  - Text left, image right:  same, with the text first
+  - Large image:             .col-md-6.col-lg-8 image, .col-md-6.col-lg-4 text
+  - Three columns:           three .col-md-4, each with image, h3 and text
+
+  - ISO breakpoints: md starts at 992px, lg at 1200px. Below md the columns
+    stack, image above text, and the stylesheet adds space between them.
+  - Write the column classes with the md class first (class="col-md-6"),
+    so the spacing between stacked columns applies.
+  - .align-items-center centres the text against the image. Leave it out
+    when the text is longer than the image is tall.
+  - One h2 per section; h3 inside the three columns.
+-->
+
+<main class="container">
+
+  <!-- Image left, text right -->
+  <section>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <figure>
+          <div class="img-container">
+            <img src="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/img/placeholder-1200x600.png" class="img-fluid" width="1200" height="600" alt="People reviewing a document together">
+          </div>
+        </figure>
+      </div>
+      <div class="col-md-6">
+        <h2>Benefits of standards</h2>
+        <p>International standards bring technological, economic and societal benefits. They help to harmonize technical specifications of products and services, making industry more efficient and breaking down barriers to international trade.</p>
+        <a href="#" class="btn btn-primary">Find out more</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Text left, image right -->
+  <section>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>Developing standards</h2>
+        <p>Standards are developed by experts from around the world, through national standards bodies. Each standard goes through several stages of consultation before it is published.</p>
+        <a href="#" class="btn btn-outline-primary">How we develop standards</a>
+      </div>
+      <div class="col-md-6">
+        <figure>
+          <div class="img-container">
+            <img src="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/img/placeholder-1200x600.png" class="img-fluid" width="1200" height="600" alt="Delegates voting at a meeting">
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Large image -->
+  <section>
+    <div class="row">
+      <div class="col-md-6 col-lg-8">
+        <figure>
+          <div class="img-container">
+            <img src="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/img/placeholder-1200x600.png" class="img-fluid" width="1200" height="600" alt="Solar panels on a factory roof">
+          </div>
+          <figcaption>Energy management with ISO 50001.</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <h2>Energy management</h2>
+        <p>ISO 50001 helps organizations of every size use energy more efficiently, through a practical energy management system.</p>
+        <p><a href="#">Read about ISO 50001</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Three columns -->
+  <section>
+    <h2>Popular standards</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <figure>
+          <div class="img-container">
+            <img src="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/img/placeholder-1200x600.png" class="img-fluid" width="1200" height="600" alt="">
+          </div>
+        </figure>
+        <h3>Quality management</h3>
+        <p>ISO 9001 sets out the criteria for a quality management system.</p>
+      </div>
+      <div class="col-md-4">
+        <figure>
+          <div class="img-container">
+            <img src="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/img/placeholder-1200x600.png" class="img-fluid" width="1200" height="600" alt="">
+          </div>
+        </figure>
+        <h3>Information security</h3>
+        <p>ISO/IEC 27001 helps organizations keep their information secure.</p>
+      </div>
+      <div class="col-md-4">
+        <figure>
+          <div class="img-container">
+            <img src="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/img/placeholder-1200x600.png" class="img-fluid" width="1200" height="600" alt="">
+          </div>
+        </figure>
+        <h3>Environmental management</h3>
+        <p>ISO 14001 helps organizations reduce their environmental impact.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>

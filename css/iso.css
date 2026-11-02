@@ -2253,3 +2253,253 @@ footer .topbar .topbar-content .poweredby-txt {
   float: none;
   margin-bottom: 20px;
 }
+
+/* Component: image. From 01-leaves/images/images.scss and 02-branches/media/figures.scss */
+p img, figure img, .figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.img-fluid {
+  border-radius: 0.5rem;
+}
+
+figure, .figure {
+  position: relative;
+  overflow: hidden;
+}
+figure figcaption, .figure figcaption {
+  max-width: 100%;
+  padding-top: 8px;
+  font-size: 0.875em;
+  line-height: 1.3em;
+}
+figure figcaption > p, .figure figcaption > p {
+  margin-bottom: 0.3em;
+  max-width: initial !important;
+}
+figure .copyright, figure .info, .figure .copyright, .figure .info {
+  position: absolute;
+  color: #e9ecef;
+  font-size: 0.7rem;
+  z-index: 1;
+  padding: 4px 6px 3px 6px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+figure .copyright > p, figure .info > p, .figure .copyright > p, .figure .info > p {
+  margin-bottom: 0;
+}
+figure .copyright a, figure .info a, .figure .copyright a, .figure .info a {
+  color: #FFF !important;
+  text-decoration: underline;
+  background: none !important;
+}
+figure .copyright, .figure .copyright {
+  top: 0;
+  right: 0;
+  text-align: right;
+}
+figure .info, .figure .info {
+  top: 0;
+  left: 0;
+  margin: 8px;
+}
+figure .img-container, .figure .img-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+@media (min-width: 768px) {
+  figure a img.hover-zoom, .figure a img.hover-zoom {
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  figure a:hover img.hover-zoom, .figure a:hover img.hover-zoom {
+    opacity: 0.8;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+
+.width-100pct {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  height: auto;
+}
+
+.width-300 {
+  max-width: 300px !important;
+  height: auto;
+}
+
+.width-180 {
+  max-width: 180px !important;
+  height: auto;
+}
+
+.width-150 {
+  max-width: 150px !important;
+  height: auto;
+}
+
+.align-right {
+  margin: 0 0 1.2em 2em;
+  float: right !important;
+}
+.align-right .width-100pct {
+  margin-left: 0;
+}
+
+.align-left {
+  margin: 0 2em 1.2em 0;
+  float: left !important;
+}
+.align-left .width-100pct {
+  margin-right: 0;
+}
+
+.align-center {
+  margin: 0 auto 1.2em auto;
+  float: none;
+}
+.align-center img,
+.align-center figure,
+.align-center .figure {
+  margin: auto;
+}
+
+.circle,
+.circle img {
+  border-radius: 50%;
+  position: inherit;
+  z-index: 1;
+}
+
+.circle figcaption {
+  text-align: center;
+}
+
+@media (max-width: 767.98px) {
+  .width-300 {
+    float: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+/* Component: breadcrumb. From 02-branches/navigation/breadcrumb.scss (Bootstrap's breadcrumb CSS is in bootstrap-iso.css) */
+.nav-breadcrumb {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.nav-breadcrumb ol.breadcrumb,
+.nav-breadcrumb ul {
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before,
+.breadcrumb-item.active {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-primary .breadcrumb-item + .breadcrumb-item::before,
+.bg-primary .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-secondary .breadcrumb-item + .breadcrumb-item::before,
+.bg-secondary .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-info .breadcrumb-item + .breadcrumb-item::before,
+.bg-info .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-success .breadcrumb-item + .breadcrumb-item::before,
+.bg-success .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-warning .breadcrumb-item + .breadcrumb-item::before,
+.bg-warning .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-danger .breadcrumb-item + .breadcrumb-item::before,
+.bg-danger .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-brand .breadcrumb-item + .breadcrumb-item::before,
+.bg-brand .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-brand-mid .breadcrumb-item + .breadcrumb-item::before,
+.bg-brand-mid .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-brand-dark .breadcrumb-item + .breadcrumb-item::before,
+.bg-brand-dark .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-navy .breadcrumb-item + .breadcrumb-item::before,
+.bg-navy .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-blue .breadcrumb-item + .breadcrumb-item::before,
+.bg-blue .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-pink .breadcrumb-item + .breadcrumb-item::before,
+.bg-pink .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-purple .breadcrumb-item + .breadcrumb-item::before,
+.bg-purple .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-green .breadcrumb-item + .breadcrumb-item::before,
+.bg-green .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-yellow .breadcrumb-item + .breadcrumb-item::before,
+.bg-yellow .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-dark .breadcrumb-item + .breadcrumb-item::before,
+.bg-dark .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-darkgray .breadcrumb-item + .breadcrumb-item::before,
+.bg-darkgray .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-darkergray .breadcrumb-item + .breadcrumb-item::before,
+.bg-darkergray .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bg-black .breadcrumb-item + .breadcrumb-item::before,
+.bg-black .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.5);
+}

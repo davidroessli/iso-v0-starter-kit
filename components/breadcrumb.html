@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ISO breadcrumbs</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/css/bootstrap-iso.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/css/iso.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+<!--
+  BREADCRUMBS
+
+  Bootstrap's breadcrumb in a <nav aria-label="Breadcrumb">. Shows where the
+  page sits in the site.
+
+  Variants:
+  - Top of page: .small, at the start of <main>, before the h1. Use this one
+    on most pages. .pt-3 keeps it clear of the navigation bar.
+  - Dark strip:  in a .nav-breadcrumb.bg-black strip, just above the footer
+    (as on iso.org). The colours adapt to the dark background.
+
+  - The first item is the home page, shown as a house icon with hidden text
+    "Home" for screen readers.
+  - The last item is the current page: .active, aria-current="page", no link.
+  - Use short page titles. Don't add separators: the stylesheet draws them.
+-->
+
+<!-- Top of page -->
+<main class="container">
+  <nav aria-label="Breadcrumb" class="breadcrumb-container small pt-3">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#"><i class="bi bi-house" aria-hidden="true"></i><span class="visually-hidden">Home</span></a></li>
+      <li class="breadcrumb-item"><a href="#">Standards</a></li>
+      <li class="breadcrumb-item"><a href="#">Popular standards</a></li>
+      <li class="breadcrumb-item active" aria-current="page">ISO 9001</li>
+    </ol>
+  </nav>
+  <section>
+    <h1>ISO 9001 Quality management</h1>
+    <p class="lead">The page content starts here.</p>
+  </section>
+</main>
+
+<!-- Dark strip above the footer -->
+<div class="nav-breadcrumb bg-black">
+  <div class="container">
+    <nav aria-label="Breadcrumb" class="breadcrumb-container small">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#"><i class="bi bi-house" aria-hidden="true"></i><span class="visually-hidden">Home</span></a></li>
+        <li class="breadcrumb-item"><a href="#">Standards</a></li>
+        <li class="breadcrumb-item"><a href="#">Popular standards</a></li>
+        <li class="breadcrumb-item active" aria-current="page">ISO 9001</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ISO images</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/css/bootstrap-iso.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/css/iso.css">
+</head>
+<body>
+<!--
+  IMAGES
+
+  Put images in a <figure>, with the <img> inside a .img-container. The
+  stylesheet rounds the corners and keeps the image inside its column.
+
+  Variants:
+  - With caption:      <figcaption> under the image (small text)
+  - With copyright:    .copyright on the image, top right
+  - Link:              the image inside an <a>; .hover-zoom zooms it on hover
+  - In text:           .align-right (or .align-left) and a width class
+                       (.width-300, .width-180, .width-150) float the figure
+                       next to the paragraphs; it goes full width on phones
+  - Portrait:          .circle on the figure, with a square image
+
+  - Every image needs alt text. Use alt="" only for decorative images.
+  - Add width and height attributes (the image's real size), so the page
+    doesn't jump while it loads.
+  - Use landscape 2:1 images (1200x600) unless there's a reason not to.
+    Give bigger images a srcset, e.g.
+    srcset="photo-600x300.jpg 600w, photo-1200x600.jpg 1200w" sizes="(min-width: 992px) 50vw, 100vw"
+  - Don't add border, shadow or rounded-* classes: the ISO look comes from
+    the stylesheet.
+-->
+
+<main class="container">
+
+  <section>
+    <h2>With caption</h2>
+    <div class="row">
+      <div class="col-md-8">
+        <figure>
+          <div class="img-container">
+            <img src="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/img/placeholder-1200x600.png" class="img-fluid" width="1200" height="600" alt="Experts sitting around a table at a technical committee meeting">
+          </div>
+          <figcaption>Experts at a technical committee meeting in Geneva.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>With copyright</h2>
+    <div class="row">
+      <div class="col-md-8">
+        <figure>
+          <div class="img-container">
+            <img src="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/img/placeholder-1200x600.png" class="img-fluid" width="1200" height="600" alt="Wind turbines on a hill at sunset">
+            <div class="copyright">© Photographer name</div>
+          </div>
+          <figcaption>Wind farm. Standards help renewable energy grow.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Link</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <figure>
+          <div class="img-container">
+            <a href="#">
+              <img src="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/img/placeholder-1200x600.png" class="hover-zoom" width="1200" height="600" alt="ISO 9001 quality management">
+            </a>
+          </div>
+          <figcaption>Read about ISO 9001.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>In text</h2>
+    <div class="row">
+      <div class="col-md-8">
+        <figure class="align-right width-300">
+          <div class="img-container">
+            <img src="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/img/placeholder-1200x600.png" class="img-fluid" width="1200" height="600" alt="A laboratory technician checking a sample">
+          </div>
+          <figcaption>Testing laboratories use ISO/IEC 17025.</figcaption>
+        </figure>
+        <p>ISO/IEC 17025 enables laboratories to demonstrate that they operate competently and generate valid results, thereby promoting confidence in their work both nationally and around the world.</p>
+        <p>It also helps facilitate cooperation between laboratories and other bodies by generating wider acceptance of results between countries. Test reports and certificates can be accepted from one country to another without the need for further testing.</p>
+        <p>The standard is useful for any organization that performs testing, sampling or calibration and wants reliable results.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Portrait</h2>
+    <div class="row">
+      <div class="col-6 col-md-3">
+        <figure class="circle">
+          <img src="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/img/placeholder-600x600.png" width="600" height="600" alt="Portrait of the ISO Secretary-General">
+          <figcaption>First name Last name<br>ISO Secretary-General</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>
