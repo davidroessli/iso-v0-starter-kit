@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ISO callouts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/css/bootstrap-iso.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/css/iso.css">
+</head>
+<body>
+<!--
+  CALLOUTS
+
+  A short block of text set apart by a coloured line: a key message, a
+  feature, a "did you know". Lighter than a card: no background, no shadow.
+
+  Variants:
+  - Default:      red line on the left
+  - With icon:    an ISO line icon (svg.isoicon) above the heading
+  - Line on top:  .callout-top; use it for several callouts side by side
+  - Colour:       .callout-{colour} changes the line, e.g. .callout-info,
+                  .callout-success, .callout-brand-dark (any colour in
+                  tokens/tokens.json)
+  - On a dark band: inside a dark .bg-* section the line turns white
+
+  - Heading h3 (or h4 for small callouts), then one or two short paragraphs.
+  - The icon is inline SVG with class="isoicon", aria-hidden="true",
+    fill="none" and stroke="currentColor"; the stylesheet sets its size and
+    colour. Copy the one below and change only its shapes.
+-->
+
+<main class="container">
+
+  <section>
+    <h2>Default</h2>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="callout">
+          <h3>Did you know?</h3>
+          <p>ISO has published more than 25 000 international standards, covering almost every industry, from technology to food safety, agriculture and healthcare.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>With icon</h2>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="callout">
+          <svg class="isoicon" viewBox="0 0 96 96" fill="none" stroke="currentColor" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="48" cy="48" r="40"/>
+            <ellipse cx="48" cy="48" rx="22" ry="40"/>
+            <line x1="48" y1="9" x2="48" y2="29"/>
+            <line x1="48" y1="41" x2="48" y2="55"/>
+            <line x1="48" y1="67" x2="48" y2="88"/>
+            <line x1="10" y1="35" x2="42" y2="35"/>
+            <line x1="54" y1="35" x2="86" y2="35"/>
+            <line x1="10" y1="61" x2="42" y2="61"/>
+            <line x1="54" y1="61" x2="86" y2="61"/>
+          </svg>
+          <h3>A global network</h3>
+          <p>ISO's members are the national standards bodies of 170 countries. Each one represents ISO in its country.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Line on top, side by side</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="callout callout-top">
+          <h4>Grounded</h4>
+          <p>Answers are based on published ISO standards.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="callout callout-top">
+          <h4>Plain language</h4>
+          <p>No jargon: explanations anyone can follow.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="callout callout-top">
+          <h4>Role-aware</h4>
+          <p>Answers adapt to what you do and need.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Colour</h2>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="callout callout-info">
+          <h3>Public consultation</h3>
+          <p>Drafts of new standards are open for comment through your national standards body.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- On a dark band -->
+<section class="bg-brand-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="callout">
+          <h3>Standards make a difference</h3>
+          <p>They help businesses work more efficiently, protect consumers and support the Sustainable Development Goals.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

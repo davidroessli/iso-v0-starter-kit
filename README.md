@@ -7,9 +7,10 @@ Wood is Bootstrap 5.3 with an ISO layer on top. This kit keeps that split:
 | File | What it is | Give it to the AI? |
 |---|---|---|
 | `css/bootstrap-iso.css` | Bootstrap 5.3.8 compiled with ISO colours, font, breakpoints and component settings (minified) | No, just link it |
-| `css/iso.css` | What ISO adds on top of Bootstrap (31 KB, readable) | Yes |
+| `css/iso.css` | What ISO adds on top of Bootstrap (60 KB, readable) | Yes |
 | `tokens/tokens.json` | ISO colours, typography, spacing, breakpoints (W3C design tokens) | Yes |
-| `components/*.html` | Standalone examples: top navigation, breadcrumbs, hero banner, text and image, images, card, buttons, footer | Yes |
+| `components/*.html` | Standalone examples: top navigation, breadcrumbs, hero banner, text and image, images, card, callout, statistics, buttons, footer | Yes |
+| `examples/page.html` | A complete ISO page built only from the components | Yes: the model for a whole page |
 
 To see the components rendered, download the repository and open the HTML files in a browser (they load the stylesheets from jsDelivr).
 
@@ -62,11 +63,12 @@ Until the full usage guidelines are written:
 - 1rem is 18–20px. Use `h1`–`h6` for headings, not `.fs-*` classes (they don't match ISO sizes).
 - The page background is light grey; cards are white with no border.
 - Put images in a `<figure>` with an `.img-container`, as in `components/image.html`. Every image needs alt text.
+- Follow the structure of `examples/page.html`: every block is a `<section>` with a `.container`; alternate the grey page with `.bg-white` and at most one or two dark `.bg-*` bands.
 - Start each page with the header from `components/navbar.html` and end it with a footer from `components/footer.html`. Keep the ISO logo as the empty `.logo.isologo` link; the stylesheet draws it.
 
 ## Status
 
-- Done: tokens, stylesheets, top navigation, breadcrumbs, hero banner, text and image, images, card, buttons, footer.
+- Done: tokens, stylesheets, top navigation, breadcrumbs, hero banner, text and image, images, card, callout, statistics, buttons, footer, example page.
 - To come: usage guidelines.
 
 The files are generated from Wood's Sass sources; edit them there, not here.

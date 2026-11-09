@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ISO statistics</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/css/bootstrap-iso.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/css/iso.css">
+</head>
+<body>
+<!--
+  STATISTICS
+
+  Key figures in large type: a number, an optional unit, and a description
+  under a thin line. Usually three in a row, in a coloured <section>.
+
+  Variants:
+  - On a white band:  <section class="bg-white text-center">; the numbers
+                      turn dark red
+  - On a dark band:   <section class="bg-brand-dark text-center">; the text
+                      turns white
+
+  - Numbers only, at most 5 characters plus a space ("25 000"). Put signs and
+    units ("+", "%", "km") in .unit, not in .number.
+  - Use a space as the thousands separator, ISO style: "25 000", not "25,000".
+  - Keep the description short: one line, two at most.
+  - Don't set font sizes or colours: the stylesheet does it.
+-->
+
+<!-- On a white band -->
+<section class="bg-white text-center">
+  <div class="container">
+    <h2>ISO in figures</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="statistic">
+          <div class="quantity">
+            <span class="number">25 000</span>
+            <span class="unit">+</span>
+          </div>
+          <div class="description">International standards</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="statistic">
+          <div class="quantity">
+            <span class="number">170</span>
+          </div>
+          <div class="description">Member countries</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="statistic">
+          <div class="quantity">
+            <span class="number">800</span>
+            <span class="unit">+</span>
+          </div>
+          <div class="description">Technical committees and subcommittees</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- On a dark band -->
+<section class="bg-brand-dark text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="statistic">
+          <div class="quantity">
+            <span class="number">8 000</span>
+            <span class="unit">+</span>
+          </div>
+          <div class="description">Questions answered</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="statistic">
+          <div class="quantity">
+            <span class="number">35</span>
+            <span class="unit">+</span>
+          </div>
+          <div class="description">Languages</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="statistic">
+          <div class="quantity">
+            <span class="number">95</span>
+            <span class="unit">%</span>
+          </div>
+          <div class="description">Users who found an answer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

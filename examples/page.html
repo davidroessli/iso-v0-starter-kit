@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quality management – ISO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/css/bootstrap-iso.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/css/iso.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+<!--
+  EXAMPLE PAGE
+
+  A complete ISO page built only from the components in components/, with no
+  extra CSS. Use it as the model for the overall structure of a new page:
+
+    utility bar + <header> navigation      components/navbar.html
+    <main>
+      hero banner (the only h1)             components/hero.html
+      text and image                        components/text-image.html
+      callouts on a white band              components/callout.html
+      cards                                 components/card.html
+      statistics on a dark band             components/statistic.html
+      call to action
+    </main>
+    breadcrumb strip                        components/breadcrumb.html
+    <footer>                                components/footer.html
+
+  - Every block in <main> is a <section> with a .container inside (or the
+    section is inside a .container). The stylesheet spaces the sections.
+  - Alternate the page background (grey, no class) with .bg-white and dark
+    .bg-* bands to separate blocks. Don't use more than one or two dark bands.
+  - Headings go in order: one h1, then h2 for each section, h3 inside.
+-->
+
+<nav class="nav-utility navbar-expand-lg text-sm navbar-dark bg-darkergray text-light sticky-top" aria-label="Utility navigation">
+  <div class="container">
+    <ul class="nav d-flex justify-content-between justify-content-sm-around justify-content-md-end">
+      <li class="nav-item">
+        <a href="#" class="nav-link d-flex align-items-center"><i class="bi bi-person-circle" aria-hidden="true"></i>&nbsp;Login</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link d-flex align-items-center"><i class="bi bi-grid-3x3-gap-fill" aria-hidden="true"></i>&nbsp;Portal</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a href="#" id="lang-dropdown" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">English</a>
+        <ul class="dropdown-menu" aria-labelledby="lang-dropdown">
+          <li><a class="dropdown-item" href="#" lang="fr">Français</a></li>
+          <li><a class="dropdown-item" href="#" lang="ru">Русский</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<header class="sticky-top">
+  <nav class="navbar nav-iso navbar-expand-lg navbar-light bg-white text-dark shadow-md" aria-label="Main navigation">
+    <div class="container">
+      <a class="logo isologo logo-sm" href="#" title="ISO home page" aria-label="ISO home page"></a>
+      <button class="btn btn-light navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon-animated"><span></span><span></span><span></span><span></span></span><span class="visually-hidden-xs">&nbsp;Menu</span>
+      </button>
+      <div class="collapse navbar-collapse flex-lg-grow-0 flex-xl-grow-1" id="navbarMain">
+        <ul class="navbar-nav me-auto mb-lg-0 ps-2 pe-2">
+          <li class="nav-item active"><a href="#" class="nav-link" aria-current="page">Standards</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Sectors</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About ISO</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">News</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Taking part</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Store</a></li>
+        </ul>
+      </div>
+      <form class="navbar-form isosearch d-flex flex-lg-grow-1" role="search">
+        <div class="input-group">
+          <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-search">
+          <button class="btn btn-light" type="submit" id="button-search"><i class="bi bi-search" aria-hidden="true"></i><span class="visually-hidden"> Search</span></button>
+        </div>
+      </form>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- Hero banner -->
+  <section class="section-img vignette vignette-bottom height-500">
+    <img src="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/img/placeholder-2400x1200.png" class="bg start-0 w-100 h-100 object-fit-cover" alt="">
+    <div class="container">
+      <div class="row row-absolute-bottom">
+        <div class="col-lg-8 text-white">
+          <h1>Quality management</h1>
+          <p class="lead">The ISO 9000 family helps organizations deliver products and services that consistently meet customer needs.</p>
+          <a href="#" class="btn btn-primary">Get the standard</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Text and image -->
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <figure>
+            <div class="img-container">
+              <img src="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/img/placeholder-1200x600.png" class="img-fluid" width="1200" height="600" alt="A team reviewing a process chart on a whiteboard">
+            </div>
+          </figure>
+        </div>
+        <div class="col-md-6">
+          <h2>What is ISO 9001?</h2>
+          <p>ISO 9001 sets out the criteria for a quality management system. It can be used by any organization, large or small, whatever its field of activity.</p>
+          <a href="#" class="btn btn-outline-primary">Read the overview</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Callouts on a white band -->
+  <section class="bg-white">
+    <div class="container">
+      <h2>Why use it?</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="callout callout-top">
+            <h3>Consistent results</h3>
+            <p>Clear processes mean customers get the same quality every time.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="callout callout-top">
+            <h3>Continual improvement</h3>
+            <p>Regular reviews find what works and what to change.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="callout callout-top">
+            <h3>Trust</h3>
+            <p>Certification shows customers and partners that you deliver.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards -->
+  <section>
+    <div class="container">
+      <h2>The ISO 9000 family</h2>
+      <div class="row">
+        <div class="col-sm-6 col-md-4">
+          <div class="card h-100">
+            <img src="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/img/placeholder-1200x600.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <h3>ISO 9000</h3>
+              <p>Fundamentals and vocabulary of quality management.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card h-100">
+            <img src="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/img/placeholder-1200x600.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <h3>ISO 9001</h3>
+              <p>Requirements for a quality management system.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+          <div class="card h-100">
+            <img src="https://cdn.jsdelivr.net/gh/davidroessli/iso-v0-starter-kit@main/img/placeholder-1200x600.png" class="card-img-top" alt="">
+            <div class="card-body">
+              <h3>ISO 9004</h3>
+              <p>Guidance to achieve sustained success.</p>
+            </div>
+            <div class="card-footer">
+              <a href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics on a dark band -->
+  <section class="bg-brand-dark text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="statistic">
+            <div class="quantity">
+              <span class="number">1</span>
+              <span class="unit">million +</span>
+            </div>
+            <div class="description">Certificates worldwide</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="statistic">
+            <div class="quantity">
+              <span class="number">170</span>
+            </div>
+            <div class="description">Countries using it</div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="statistic">
+            <div class="quantity">
+              <span class="number">1987</span>
+            </div>
+            <div class="description">First published</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to action -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Get certified</h2>
+          <p>ISO doesn't certify organizations itself. Certification bodies do, and your national standards body can help you find one.</p>
+          <a href="#" class="btn btn-primary">Find your national member</a>
+          <a href="#" class="btn btn-outline-primary">About certification</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="nav-breadcrumb bg-black">
+  <div class="container">
+    <nav aria-label="Breadcrumb" class="breadcrumb-container small">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#"><i class="bi bi-house" aria-hidden="true"></i><span class="visually-hidden">Home</span></a></li>
+        <li class="breadcrumb-item"><a href="#">Standards</a></li>
+        <li class="breadcrumb-item"><a href="#">Popular standards</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Quality management</li>
+      </ol>
+    </nav>
+  </div>
+</div>
+
+<footer class="bg-darkergray">
+  <div class="container">
+    <div class="row pt-3">
+      <div class="footer-links text-sm">
+        <ul class="list-inline">
+          <li><a href="#">ISO name and logo</a></li>
+          <li><a href="#">Privacy and copyright</a></li>
+          <li><a href="#">Sitemap</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Contact ISO</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row text-center row-middle-sm">
+      <p class="display-5 opacity-100">Making lives <strong><em>easier</em></strong>, <strong><em>safer</em></strong> and <strong><em>better</em></strong>.</p>
+    </div>
+    <div class="d-flex gap-1 align-items-center justify-content-center text-sm opacity-75 mb-2">
+      <a href="#" class="btn btn-outline-light btn-sm fw-normal">Subscribe</a>&nbsp;<div>to our email updates</div>
+    </div>
+    <div class="social-links">
+      <ul class="list-inline text-center">
+        <li><a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="#" aria-label="X"><i class="bi bi-twitter-x" aria-hidden="true"></i></a></li>
+        <li><a href="#" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="#" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="#" aria-label="YouTube"><i class="bi bi-youtube" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div class="row row-top-sm">
+      <div class="col-md-8">
+        <details class="text-xs text-muted">
+          <summary class="text-muted">© All Rights Reserved</summary>
+          <p class="pt-2">All ISO publications and materials are protected by copyright and are subject to the user’s acceptance of ISO’s conditions of copyright. Any use, including reproduction requires our written permission. All copyright requests should be addressed to <a href="mailto:copyright@iso.org">copyright@iso.org</a>.</p>
+          <p>We are committed to ensuring that our website is accessible to everyone. If you have any questions or suggestions regarding the accessibility of this site, please <a href="mailto:webmaster@iso.org?subject=Accessibility" class="text-nowrap">contact us</a>.</p>
+        </details>
+      </div>
+    </div>
+  </div>
+  <div class="topbar position-absolute">
+    <div class="topbar-content">
+      <a class="logo isologo logo-xs poweredby logo-scrollTop" href="#" title="Back to top" aria-label="Back to top"></a>
+      <div class="poweredby-txt">Powered by</div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

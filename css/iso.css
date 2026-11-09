@@ -2503,3 +2503,426 @@ figure .img-container, .figure .img-container {
 .bg-black .breadcrumb-item.active {
   color: rgba(255, 255, 255, 0.5);
 }
+
+/* Component: statistic. From 01-leaves/texts/statistic.scss */
+.statistic {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.statistic .number {
+  font-size: clamp(5rem, -4.538rem + 13.385vw, 7rem);
+  letter-spacing: -5px;
+  line-height: 1em;
+  margin-left: -8px;
+  margin-right: 5px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.statistic .number.small {
+  font-size: 75px;
+}
+.statistic .number a:link,
+.statistic .number a:visited,
+.statistic .number a:hover,
+.statistic .number a:active {
+  text-decoration: none;
+}
+.statistic .number a:hover {
+  font-weight: bolder;
+}
+.statistic .unit {
+  font-size: 30px;
+  letter-spacing: -1px;
+  line-height: 1em;
+  margin-bottom: 7px;
+  display: inline-block;
+}
+.statistic .description {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 7px;
+}
+
+.well > .statistic:first-child,
+.card > .statistic:first-child {
+  padding-top: 0;
+}
+
+.text-center .statistic {
+  text-align: center;
+}
+
+.bg-white .statistic .number {
+  color: #4f051f;
+}
+.bg-white .statistic .description {
+  border-top-color: rgba(0, 0, 0, 0.1);
+}
+
+.bg-light .statistic .number {
+  color: #4f051f;
+}
+.bg-light .statistic .description {
+  border-top-color: rgba(0, 0, 0, 0.1);
+}
+
+.bg-lightergray .statistic .number {
+  color: #4f051f;
+}
+.bg-lightergray .statistic .description {
+  border-top-color: rgba(0, 0, 0, 0.1);
+}
+
+.bg-lightgray .statistic .number {
+  color: #4f051f;
+}
+.bg-lightgray .statistic .description {
+  border-top-color: rgba(0, 0, 0, 0.1);
+}
+
+.bg-primary .statistic .description {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-secondary .statistic .description {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-info .statistic .description {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-success .statistic .description {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-warning .statistic .description {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-danger .statistic .description {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-brand .statistic .description {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-brand-mid .statistic .description {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-brand-dark .statistic .description {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-navy .statistic .description {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-blue .statistic .description {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-pink .statistic .description {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-purple .statistic .description {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-green .statistic .description {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-yellow .statistic .description {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-dark .statistic .description {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-darkgray .statistic .description {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-darkergray .statistic .description {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.bg-black .statistic .description {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Component: callout. From 02-branches/blocks/blocks.scss */
+.callout {
+  border-left-width: 5px;
+  border-left-style: solid;
+  border-color: #9c2b42;
+  padding: 1rem 0 1rem 1rem;
+}
+.callout.callout-top {
+  border-left: none;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-color: #9c2b42;
+  padding: 1rem 0 1rem 0;
+}
+.callout.callout-primary-subtle {
+  border-color: #f9cccf;
+}
+.callout.callout-secondary-subtle {
+  border-color: #dccdd2;
+}
+.callout.callout-info-subtle {
+  border-color: #cce1f1;
+}
+.callout.callout-success-subtle {
+  border-color: #cce9e1;
+}
+.callout.callout-warning-subtle {
+  border-color: #fef1d8;
+}
+.callout.callout-danger-subtle {
+  border-color: #ebd5d9;
+}
+.callout.callout-pink-subtle {
+  border-color: #ffdde2;
+}
+.callout.callout-purple-subtle {
+  border-color: #ddcaed;
+}
+.callout.callout-navy-subtle {
+  border-color: #babfcf;
+}
+.callout.callout-white {
+  border-color: #ffffff;
+}
+.callout.callout-lightergray {
+  border-color: #efeded;
+}
+.callout.callout-lightgray {
+  border-color: #e4e2e1;
+}
+.callout.callout-gray {
+  border-color: #c9c4c2;
+}
+.callout.callout-darkgray {
+  border-color: #58595b;
+}
+.callout.callout-darkergray {
+  border-color: #2c2d2e;
+}
+.callout.callout-black {
+  border-color: #000000;
+}
+.callout.callout-primary {
+  border-color: #e3000f;
+}
+.callout.callout-secondary {
+  border-color: #4f051f;
+}
+.callout.callout-info {
+  border-color: #006bb7;
+}
+.callout.callout-success {
+  border-color: #008f67;
+}
+.callout.callout-warning {
+  border-color: #f9b83e;
+}
+.callout.callout-danger {
+  border-color: #9c2b42;
+}
+.callout.callout-light {
+  border-color: #faf9f9;
+}
+.callout.callout-dark {
+  border-color: #2c2d2e;
+}
+.callout.callout-brand {
+  border-color: #e3000f;
+}
+.callout.callout-brand-mid {
+  border-color: #9c2b42;
+}
+.callout.callout-brand-dark {
+  border-color: #4f051f;
+}
+.callout.callout-navy {
+  border-color: #19285f;
+}
+.callout.callout-blue {
+  border-color: #006bb7;
+}
+.callout.callout-pink {
+  border-color: #ff8c9e;
+}
+.callout.callout-purple {
+  border-color: #8c4fc2;
+}
+.callout.callout-green {
+  border-color: #008f67;
+}
+.callout.callout-yellow {
+  border-color: #f9b83e;
+}
+.callout > .blockquote {
+  border: 0;
+  padding: 0;
+}
+.callout > *:last-child {
+  margin-block-end: 0;
+}
+
+.bg-primary .callout {
+  border-left-color: rgba(255, 255, 255, 0.25);
+}
+.bg-primary .text-end .callout, .bg-primary .text-end.callout {
+  border-right-color: rgba(255, 255, 255, 0.25);
+}
+
+.bg-secondary .callout {
+  border-left-color: rgba(255, 255, 255, 0.25);
+}
+.bg-secondary .text-end .callout, .bg-secondary .text-end.callout {
+  border-right-color: rgba(255, 255, 255, 0.25);
+}
+
+.bg-info .callout {
+  border-left-color: rgba(255, 255, 255, 0.25);
+}
+.bg-info .text-end .callout, .bg-info .text-end.callout {
+  border-right-color: rgba(255, 255, 255, 0.25);
+}
+
+.bg-success .callout {
+  border-left-color: rgba(255, 255, 255, 0.25);
+}
+.bg-success .text-end .callout, .bg-success .text-end.callout {
+  border-right-color: rgba(255, 255, 255, 0.25);
+}
+
+.bg-warning .callout {
+  border-left-color: rgba(255, 255, 255, 0.25);
+}
+.bg-warning .text-end .callout, .bg-warning .text-end.callout {
+  border-right-color: rgba(255, 255, 255, 0.25);
+}
+.bg-warning .callout {
+  border-left-color: rgba(0, 0, 0, 0.25);
+}
+.bg-warning .text-end .callout, .bg-warning .text-end.callout {
+  border-right-color: rgba(0, 0, 0, 0.25);
+}
+
+.bg-danger .callout {
+  border-left-color: rgba(255, 255, 255, 0.25);
+}
+.bg-danger .text-end .callout, .bg-danger .text-end.callout {
+  border-right-color: rgba(255, 255, 255, 0.25);
+}
+
+.bg-brand .callout {
+  border-left-color: rgba(255, 255, 255, 0.25);
+}
+.bg-brand .text-end .callout, .bg-brand .text-end.callout {
+  border-right-color: rgba(255, 255, 255, 0.25);
+}
+
+.bg-brand-mid .callout {
+  border-left-color: rgba(255, 255, 255, 0.25);
+}
+.bg-brand-mid .text-end .callout, .bg-brand-mid .text-end.callout {
+  border-right-color: rgba(255, 255, 255, 0.25);
+}
+
+.bg-brand-dark .callout {
+  border-left-color: rgba(255, 255, 255, 0.25);
+}
+.bg-brand-dark .text-end .callout, .bg-brand-dark .text-end.callout {
+  border-right-color: rgba(255, 255, 255, 0.25);
+}
+
+.bg-navy .callout {
+  border-left-color: rgba(255, 255, 255, 0.25);
+}
+.bg-navy .text-end .callout, .bg-navy .text-end.callout {
+  border-right-color: rgba(255, 255, 255, 0.25);
+}
+
+.bg-blue .callout {
+  border-left-color: rgba(255, 255, 255, 0.25);
+}
+.bg-blue .text-end .callout, .bg-blue .text-end.callout {
+  border-right-color: rgba(255, 255, 255, 0.25);
+}
+
+.bg-pink .callout {
+  border-left-color: rgba(255, 255, 255, 0.25);
+}
+.bg-pink .text-end .callout, .bg-pink .text-end.callout {
+  border-right-color: rgba(255, 255, 255, 0.25);
+}
+.bg-pink .callout {
+  border-left-color: rgba(0, 0, 0, 0.25);
+}
+.bg-pink .text-end .callout, .bg-pink .text-end.callout {
+  border-right-color: rgba(0, 0, 0, 0.25);
+}
+
+.bg-purple .callout {
+  border-left-color: rgba(255, 255, 255, 0.25);
+}
+.bg-purple .text-end .callout, .bg-purple .text-end.callout {
+  border-right-color: rgba(255, 255, 255, 0.25);
+}
+
+.bg-green .callout {
+  border-left-color: rgba(255, 255, 255, 0.25);
+}
+.bg-green .text-end .callout, .bg-green .text-end.callout {
+  border-right-color: rgba(255, 255, 255, 0.25);
+}
+
+.bg-yellow .callout {
+  border-left-color: rgba(255, 255, 255, 0.25);
+}
+.bg-yellow .text-end .callout, .bg-yellow .text-end.callout {
+  border-right-color: rgba(255, 255, 255, 0.25);
+}
+.bg-yellow .callout {
+  border-left-color: rgba(0, 0, 0, 0.25);
+}
+.bg-yellow .text-end .callout, .bg-yellow .text-end.callout {
+  border-right-color: rgba(0, 0, 0, 0.25);
+}
+
+.bg-dark .callout {
+  border-left-color: rgba(255, 255, 255, 0.25);
+}
+.bg-dark .text-end .callout, .bg-dark .text-end.callout {
+  border-right-color: rgba(255, 255, 255, 0.25);
+}
+
+.bg-darkgray .callout {
+  border-left-color: rgba(255, 255, 255, 0.25);
+}
+.bg-darkgray .text-end .callout, .bg-darkgray .text-end.callout {
+  border-right-color: rgba(255, 255, 255, 0.25);
+}
+
+.bg-darkergray .callout {
+  border-left-color: rgba(255, 255, 255, 0.25);
+}
+.bg-darkergray .text-end .callout, .bg-darkergray .text-end.callout {
+  border-right-color: rgba(255, 255, 255, 0.25);
+}
+
+.bg-black .callout {
+  border-left-color: rgba(255, 255, 255, 0.25);
+}
+.bg-black .text-end .callout, .bg-black .text-end.callout {
+  border-right-color: rgba(255, 255, 255, 0.25);
+}
